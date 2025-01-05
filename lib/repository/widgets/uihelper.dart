@@ -28,7 +28,7 @@ class UiHelper {
         borderRadius: BorderRadius.circular(10),
         color: Colors.white,
         border: Border.all(
-          color: Color(0XFFC5C5C5)
+          color: const Color(0XFFC5C5C5)
         )
       ),
       child: TextField(
@@ -50,11 +50,11 @@ class UiHelper {
       decoration: BoxDecoration(
         color: Colors.white,
         border: Border.all(
-          color: Color(0XFF27AF34)
+          color: const Color(0XFF27AF34)
         ),
         borderRadius: BorderRadius.circular(4)
       ),
-      child: Center(child: Text("Add",style: TextStyle(fontSize: 8,color: Color(0XFF27AF34)),),),
+      child: const Center(child: Text("Add",style: TextStyle(fontSize: 8,color: Color(0XFF27AF34)),),),
     );
   }
 }

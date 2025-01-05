@@ -21,12 +21,14 @@ class HomeScreen extends StatelessWidget {
     {"img": "image 44 (1).png", "text": "Dairy, Bread & \nMilk"},
     {"img": "image 45 (1).png", "text": "Biscuits & \nBakery"}
   ];
+
+  HomeScreen({super.key});
   @override
   Widget build(BuildContext context) {
     return Scaffold(
         body: Column(
       children: [
-        SizedBox(
+        const SizedBox(
           height: 40,
         ),
         Stack(
@@ -34,20 +36,20 @@ class HomeScreen extends StatelessWidget {
             Container(
               height: 190,
               width: double.infinity,
-              color: Color(0XFFEC0505),
+              color: const Color(0XFFEC0505),
               child: Column(
                 children: [
-                  SizedBox(
+                  const SizedBox(
                     height: 30,
                   ),
                   Row(
                     children: [
-                      SizedBox(
+                      const SizedBox(
                         width: 20,
                       ),
                       UiHelper.CustomText(
                           text: "Blinkit in",
-                          color: Color(0XFFFFFFFF),
+                          color: const Color(0XFFFFFFFF),
                           fontweight: FontWeight.bold,
                           fontsize: 15,
                           fontfamily: "bold"),
@@ -55,12 +57,12 @@ class HomeScreen extends StatelessWidget {
                   ),
                   Row(
                     children: [
-                      SizedBox(
+                      const SizedBox(
                         width: 20,
                       ),
                       UiHelper.CustomText(
                           text: "16 minutes",
-                          color: Color(0XFFFFFFFF),
+                          color: const Color(0XFFFFFFFF),
                           fontweight: FontWeight.bold,
                           fontsize: 20,
                           fontfamily: "bold")
@@ -68,17 +70,17 @@ class HomeScreen extends StatelessWidget {
                   ),
                   Row(
                     children: [
-                      SizedBox(
+                      const SizedBox(
                         width: 20,
                       ),
                       UiHelper.CustomText(
                           text: "HOME ",
-                          color: Color(0XFFFFFFFF),
+                          color: const Color(0XFFFFFFFF),
                           fontweight: FontWeight.bold,
                           fontsize: 14),
                       UiHelper.CustomText(
-                          text: "- Sujal Dave, Ratanada, Jodhpur (Raj)",
-                          color: Color(0XFFFFFFFF),
+                          text: "- Aditya Goutam, Tekanpur, Gwalior (Adi)",
+                          color: const Color(0XFFFFFFFF),
                           fontweight: FontWeight.bold,
                           fontsize: 14)
                     ],
@@ -86,7 +88,7 @@ class HomeScreen extends StatelessWidget {
                 ],
               ),
             ),
-            Positioned(
+            const Positioned(
               right: 20,
               bottom: 100,
               child: CircleAvatar(
@@ -113,7 +115,7 @@ class HomeScreen extends StatelessWidget {
         Container(
           height: 196,
           width: double.infinity,
-          color: Color(0XFFEC0505),
+          color: const Color(0XFFEC0505),
           child: Column(
             mainAxisAlignment: MainAxisAlignment.center,
             children: [
@@ -144,7 +146,7 @@ class HomeScreen extends StatelessWidget {
                           height: 108,
                           width: 86,
                           decoration: BoxDecoration(
-                              color: Color(0XFFEAD3D3),
+                              color: const Color(0XFFEAD3D3),
                               borderRadius: BorderRadius.circular(10)),
                           child: Column(
                             children: [
@@ -191,27 +193,27 @@ class HomeScreen extends StatelessWidget {
                       ),
                     ),
                     Padding(
-                      padding: EdgeInsets.only(left: 20),
+                      padding: const EdgeInsets.only(left: 20),
                       child: UiHelper.CustomText(
                           text: categroy[index]["text"].toString(),
                           color: Colors.black,
                           fontweight: FontWeight.bold,
                           fontsize: 8),
                     ),
-                    SizedBox(height: 5,),
+                    const SizedBox(height: 5,),
                     Padding(
                       padding: const EdgeInsets.only(right: 40),
                       child: Row(children: [
                         UiHelper.CustomImage(img: "timer 4.png"),
-                        UiHelper.CustomText(text: "16 MINS", color: Color(0XFF9C9C9C), fontweight: FontWeight.normal, fontsize: 10)
+                        UiHelper.CustomText(text: "16 MINS", color: const Color(0XFF9C9C9C), fontweight: FontWeight.normal, fontsize: 10)
                       ],),
                     ),
-                    SizedBox(height: 5,),
+                    const SizedBox(height: 5,),
                     Padding(
                       padding: const EdgeInsets.only(right: 60),
                       child: Row(children: [
                         UiHelper.CustomImage(img: "image 50 (1).png"),
-                        UiHelper.CustomText(text: "79", color: Color(0XFF9C9C9C), fontweight: FontWeight.bold, fontsize: 15)
+                        UiHelper.CustomText(text: "79", color: const Color(0XFF9C9C9C), fontweight: FontWeight.bold, fontsize: 15)
 
                       ],),
                     )
@@ -225,7 +227,7 @@ class HomeScreen extends StatelessWidget {
         ),
         Row(
           children: [
-            SizedBox(
+            const SizedBox(
               width: 20,
             ),
             UiHelper.CustomText(
@@ -236,7 +238,7 @@ class HomeScreen extends StatelessWidget {
                 fontfamily: "bold")
           ],
         ),
-        SizedBox(
+        const SizedBox(
           height: 10,
         ),
         Expanded(
@@ -254,7 +256,7 @@ class HomeScreen extends StatelessWidget {
                         width: 71,
                         decoration: BoxDecoration(
                             borderRadius: BorderRadius.circular(10),
-                            color: Color(0XFFD9EBEB)),
+                            color: const Color(0XFFD9EBEB)),
                         child: UiHelper.CustomImage(
                             img: grocerykitchen[index]["img"].toString()),
                       ),

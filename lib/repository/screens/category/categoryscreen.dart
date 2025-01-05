@@ -32,12 +32,14 @@ class CategoryScreen extends StatelessWidget {
     {"img": "image 40.png"}
   ];
 
+  CategoryScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       body: Column(
         children: [
-          SizedBox(
+          const SizedBox(
             height: 40,
           ),
           Stack(
@@ -45,20 +47,20 @@ class CategoryScreen extends StatelessWidget {
               Container(
                 height: 190,
                 width: double.infinity,
-                color: Color(0XFFF7CB45),
+                color: const Color(0XFFF7CB45),
                 child: Column(
                   children: [
-                    SizedBox(
+                    const SizedBox(
                       height: 30,
                     ),
                     Row(
                       children: [
-                        SizedBox(
+                        const SizedBox(
                           width: 20,
                         ),
                         UiHelper.CustomText(
                             text: "Blinkit in",
-                            color: Color(0XFF000000),
+                            color: const Color(0XFF000000),
                             fontweight: FontWeight.bold,
                             fontsize: 15,
                             fontfamily: "bold"),
@@ -66,12 +68,12 @@ class CategoryScreen extends StatelessWidget {
                     ),
                     Row(
                       children: [
-                        SizedBox(
+                        const SizedBox(
                           width: 20,
                         ),
                         UiHelper.CustomText(
                             text: "16 minutes",
-                            color: Color(0XFF000000),
+                            color: const Color(0XFF000000),
                             fontweight: FontWeight.bold,
                             fontsize: 20,
                             fontfamily: "bold")
@@ -79,17 +81,17 @@ class CategoryScreen extends StatelessWidget {
                     ),
                     Row(
                       children: [
-                        SizedBox(
+                        const SizedBox(
                           width: 20,
                         ),
                         UiHelper.CustomText(
                             text: "HOME ",
-                            color: Color(0XFF000000),
+                            color: const Color(0XFF000000),
                             fontweight: FontWeight.bold,
                             fontsize: 14),
                         UiHelper.CustomText(
-                            text: "- Sujal Dave, Ratanada, Jodhpur (Raj)",
-                            color: Color(0XFF000000),
+                            text: "- Aditya Goutam, Tekanpur, Gwalior (Adi)",
+                            color: const Color(0XFF000000),
                             fontweight: FontWeight.bold,
                             fontsize: 14)
                       ],
@@ -97,7 +99,7 @@ class CategoryScreen extends StatelessWidget {
                   ],
                 ),
               ),
-              Positioned(
+              const Positioned(
                 right: 20,
                 bottom: 100,
                 child: CircleAvatar(
@@ -116,12 +118,12 @@ class CategoryScreen extends StatelessWidget {
                   child: UiHelper.CustomTextField(controller: searchController))
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 30,
           ),
           Row(
             children: [
-              SizedBox(
+              const SizedBox(
                 width: 20,
               ),
               UiHelper.CustomText(
@@ -132,7 +134,7 @@ class CategoryScreen extends StatelessWidget {
                   fontfamily: "bold")
             ],
           ),
-          SizedBox(
+          const SizedBox(
             height: 10,
           ),
           Expanded(
@@ -150,7 +152,7 @@ class CategoryScreen extends StatelessWidget {
                           width: 71,
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(10),
-                              color: Color(0XFFD9EBEB)),
+                              color: const Color(0XFFD9EBEB)),
                           child: UiHelper.CustomImage(
                               img: grocerykitchen[index]["img"].toString()),
                         ),
@@ -183,7 +185,7 @@ class CategoryScreen extends StatelessWidget {
                           width: 71,
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(10),
-                              color: Color(0XFFD9EBEB)),
+                              color: const Color(0XFFD9EBEB)),
                           child: UiHelper.CustomImage(
                               img: secondgrocery[index]["img"].toString()),
                         ),
@@ -203,7 +205,7 @@ class CategoryScreen extends StatelessWidget {
           ),
           Row(
             children: [
-              SizedBox(
+              const SizedBox(
                 width: 20,
               ),
               UiHelper.CustomText(
@@ -229,7 +231,7 @@ class CategoryScreen extends StatelessWidget {
                           width: 71,
                           decoration: BoxDecoration(
                               borderRadius: BorderRadius.circular(10),
-                              color: Color(0XFFD9EBEB)),
+                              color: const Color(0XFFD9EBEB)),
                           child: UiHelper.CustomImage(
                               img: snacksanddrinks[index]["img"].toString()),
                         ),
@@ -247,12 +249,12 @@ class CategoryScreen extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
           Row(
             children: [
-              SizedBox(
+              const SizedBox(
                 width: 20,
               ),
               UiHelper.CustomText(
@@ -275,7 +277,7 @@ class CategoryScreen extends StatelessWidget {
                       width: 71,
                       decoration: BoxDecoration(
                           borderRadius: BorderRadius.circular(10),
-                          color: Color(0XFFD9EBEB)),
+                          color: const Color(0XFFD9EBEB)),
                       child: UiHelper.CustomImage(
                           img: hosuehold[index]["img"].toString()),
                     ),

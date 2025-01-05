@@ -3,6 +3,8 @@ import 'package:blinkit_series/repository/widgets/uihelper.dart';
 import 'package:flutter/material.dart';
 
 class LoginScreen extends StatelessWidget {
+  const LoginScreen({super.key});
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -10,20 +12,20 @@ class LoginScreen extends StatelessWidget {
       child: Column(
         children: [
           UiHelper.CustomImage(img: "Blinkit Onboarding Screen.png"),
-          SizedBox(
+          const SizedBox(
             height: 30,
           ),
           UiHelper.CustomImage(img: "image 10.png"),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
           UiHelper.CustomText(
               text: "India’s last minute app",
-              color: Color(0XFF000000),
+              color: const Color(0XFF000000),
               fontweight: FontWeight.bold,
               fontsize: 20,
               fontfamily: "bold"),
-          SizedBox(
+          const SizedBox(
             height: 20,
           ),
           Card(
@@ -35,27 +37,27 @@ class LoginScreen extends StatelessWidget {
               width: 350,
               decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10),
-                  color: Color(0XFFFFFFFF)),
+                  color: const Color(0XFFFFFFFF)),
               child: Column(
                 children: [
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   UiHelper.CustomText(
-                      text: "Sujal",
-                      color: Color(0XFF000000),
+                      text: "Aditya",
+                      color: const Color(0XFF000000),
                       fontweight: FontWeight.w500,
                       fontsize: 14),
-                  SizedBox(
+                  const SizedBox(
                     height: 5,
                   ),
                   UiHelper.CustomText(
-                      text: "78277XXXX",
-                      color: Color(0XFF9C9C9C),
+                      text: "75015XXXX",
+                      color: const Color(0XFF9C9C9C),
                       fontweight: FontWeight.bold,
                       fontsize: 14,
                       fontfamily: "bold"),
-                  SizedBox(
+                  const SizedBox(
                     height: 20,
                   ),
                   SizedBox(
@@ -66,10 +68,10 @@ class LoginScreen extends StatelessWidget {
                           Navigator.pushReplacement(
                               context,
                               MaterialPageRoute(
-                                  builder: (context) => BottomNavScreen()));
+                                  builder: (context) => const BottomNavScreen()));
                         },
                         style: ElevatedButton.styleFrom(
-                            backgroundColor: Color(0XFFE23744),
+                            backgroundColor: const Color(0XFFE23744),
                             shape: RoundedRectangleBorder(
                                 borderRadius: BorderRadius.circular(10))),
                         child: Row(
@@ -77,32 +79,32 @@ class LoginScreen extends StatelessWidget {
                           children: [
                             UiHelper.CustomText(
                                 text: "Login  with",
-                                color: Color(0XFFFFFFFF),
+                                color: const Color(0XFFFFFFFF),
                                 fontweight: FontWeight.bold,
                                 fontsize: 14,
                                 fontfamily: "bold"),
-                            SizedBox(
+                            const SizedBox(
                               width: 5,
                             ),
                             UiHelper.CustomImage(img: "image 9.png")
                           ],
                         )),
                   ),
-                  SizedBox(
+                  const SizedBox(
                     height: 8,
                   ),
                   UiHelper.CustomText(
                       text:
                           "Access your saved addresses from Zomato automatically!",
-                      color: Color(0XFF9C9C9C),
+                      color: const Color(0XFF9C9C9C),
                       fontweight: FontWeight.normal,
                       fontsize: 10),
-                  SizedBox(
+                  const SizedBox(
                     height: 15,
                   ),
                   UiHelper.CustomText(
                       text: "or login with phone number",
-                      color: Color(0XFF269237),
+                      color: const Color(0XFF269237),
                       fontweight: FontWeight.normal,
                       fontsize: 14)
                 ],
